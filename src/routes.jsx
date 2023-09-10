@@ -12,7 +12,7 @@ import NetworksContainer from './pages/Networks/NetworksContainer';
 import NotFound from './pages/NotFound/NotFound';
 const RecycleBin = lazy(() => import('./pages/Networks/RecycleBin'));
 const ChoosePayment = lazy(() => import('./pages/Payment/ChoosePayment'));
-const Invoice = lazy(() => import('./pages/Payment/Invoice'));
+// const Invoice = lazy(() => import('./pages/Payment/Invoice'));
 const InvoiceForm = lazy(() => import('./pages/Payment/InvoiceForm'));
 const PricingCalculator = lazy(() =>
   import('./pages/PricingCalculator/PricingCalculator'),
@@ -181,14 +181,14 @@ const AppRouter = () => {
               </Suspense>
             }
           />
-          <Route
+          {/* <Route
             path="/invoice"
             element={
               <Suspense fallback={<Loading />}>
                 <Invoice />
               </Suspense>
             }
-          />
+          /> */}
           <Route
             path="/recycle-bin"
             element={
