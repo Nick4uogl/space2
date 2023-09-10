@@ -1,0 +1,24 @@
+.pricing-calculator-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eef0f3;
+
+  &__left {
+    flex: 1 1 auto;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  &__subtitle {
+    margin-top: 0.5rem;
+    color: #6f7f8f;
+    letter-spacing: -0.01em;
+    width: 100%;
+  }
+}

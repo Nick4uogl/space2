@@ -1,0 +1,66 @@
+.network-edit-modal {
+  display: flex;
+  justify-content: center;
+  padding-top: 6.5rem;
+  align-items: flex-start;
+  .MuiModal-backdrop {
+    background-color: transparent;
+  }
+
+  &__title {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 0.9375rem;
+    margin-bottom: 0.62rem;
+    @media (min-width: 125rem) {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    @media (min-width: 187.5rem) {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+  }
+
+  &__content {
+    max-width: 27rem;
+    @media (min-width: 125rem) {
+      max-width: 34rem;
+    }
+    @media (min-width: 156.25rem) {
+      max-width: 43rem;
+    }
+    @media (min-width: 187.5rem) {
+      max-width: 53rem;
+    }
+    padding: 1rem;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    z-index: 100000;
+  }
+
+  &__input {
+    width: 100%;
+    border-radius: 0.3125rem;
+    border: 1px solid var(--main-green);
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    @media (min-width: 125rem) {
+      padding: 1rem 1.5rem;
+      font-size: 1.2rem;
+    }
+    @media (min-width: 156.25rem) {
+      padding: 1.5rem 2rem;
+      font-size: 1.5rem;
+    }
+    @media (min-width: 187.5rem) {
+      padding: 2rem 2.5rem;
+      font-size: 2rem;
+    }
+    &:focus {
+      outline-color: var(--main-green);
+    }
+  }
+}

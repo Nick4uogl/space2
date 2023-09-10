@@ -1,0 +1,41 @@
+.mail-send {
+  min-width: 435px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03);
+  text-align: center;
+  align-items: center;
+
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  p {
+    color: #6f7f8f;
+    margin-top: 11px;
+    margin-bottom: 48px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &__close {
+    align-self: flex-end;
+    margin-bottom: 35px;
+  }
+
+  &__mail {
+    width: 167px;
+    height: 145px;
+  }
+
+  &__btn {
+    width: 99px !important;
+    margin-top: 45px;
+    margin-bottom: 56px;
+  }
+}

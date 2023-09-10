@@ -1,0 +1,355 @@
+$firstBreakPoint: 106.25rem;
+$tablet: 61.9988rem;
+$mobile: 47.9988rem;
+
+.choose-payment-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  &__wrapper {
+    padding-top: 2rem;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__container {
+    width: 100%;
+    max-width: 39.5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: -0.015rem;
+    text-align: center;
+  }
+  &__btn {
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+
+  &__subtitle {
+    color: #6f7f8f;
+    font-size: 0.875rem;
+    line-height: 142%;
+    letter-spacing: -0.00875rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+    @media (max-width: 106.25rem) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__back {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1.5rem;
+    color: var(--main-grey, #6f7f8f);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 142%;
+    letter-spacing: -0.00875rem;
+    text-transform: uppercase;
+  }
+
+  &__alert {
+    border-radius: 0.25rem;
+    align-items: flex-start;
+    background: rgba(189, 197, 206, 0.15);
+    padding: 0.75rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 20rem;
+    margin-top: 2rem;
+    color: var(--main-black, #121212);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.00875rem;
+  }
+}
+
+.choose-payment {
+  border-radius: 0.875rem;
+  border: 1px solid var(--main-silver, #bdc5ce);
+  padding: 2rem 2.75rem;
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.0125rem;
+    margin-bottom: 2rem;
+  }
+}
+.choose-payment-stripe-tile {
+  border-radius: 0.5rem;
+  border: 1px solid var(--main-silver, #bdc5ce);
+  padding: 1rem 0.75rem;
+  &__text {
+    color: var(--main-grey, #6f7f8f);
+    font-size: 0.875rem;
+    line-height: 142.857%;
+    letter-spacing: -0.00875rem;
+    margin-top: 0.63rem;
+  }
+  &__text-secure {
+    color: var(--main-green);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: -0.01%;
+  }
+}
+
+.payment-method {
+  &__control-option {
+    color: #000;
+    font-weight: 700;
+    gap: 0.5rem;
+  }
+}
+
+.invoice-payment-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &__container {
+    flex: 1 1 auto;
+    padding: 1rem;
+    padding-top: 4.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: $firstBreakPoint) {
+      padding-top: 3.25rem;
+    }
+    @media (max-width: 1300px) {
+      padding-top: 2.25rem;
+    }
+  }
+  &__title {
+    max-width: 37.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 133%;
+    letter-spacing: -0.01em;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    @media (max-width: $tablet) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.invoice-payment-card {
+  padding-bottom: 1.62rem;
+  border-radius: 0.875rem;
+  border: 1px solid var(--main-silver, #bdc5ce);
+  width: 100%;
+  max-width: 37.5rem;
+  @media (max-width: $tablet) {
+    padding-bottom: 0.82rem;
+  }
+  &__back {
+    color: var(--main-grey, #6f7f8f);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 142%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-flex;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__content {
+    padding: 0rem 2.25rem;
+    @media (max-width: $tablet) {
+      padding: 0rem 1.5rem;
+    }
+  }
+  &__input {
+    &-checkmark {
+      display: none;
+    }
+    label {
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 142%;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      span {
+        color: #f34a4a;
+      }
+    }
+    input,
+    textarea {
+      border-radius: 0.5rem;
+      border: 1px solid #bdc5ce;
+      padding: 0.87rem 1rem;
+      width: 100%;
+      color: #6f7f8f;
+      font-family: Nexa;
+      font-size: 0.875rem;
+      line-height: 142%;
+      letter-spacing: -0.01em;
+      &:focus {
+        outline-color: #bdc5ce;
+      }
+    }
+    &--required {
+      input {
+        border: 1px solid #f34a4a;
+        &:focus {
+          outline-color: #f34a4a;
+        }
+      }
+    }
+    &--validated {
+      position: relative;
+      .invoice-payment-card__input-checkmark {
+        display: inline-block;
+        position: absolute;
+        top: 55%;
+        right: 0.75rem;
+      }
+      input {
+        border: 1px solid #51ce7b;
+        &:focus {
+          outline-color: #51ce7b;
+        }
+      }
+    }
+  }
+  &__submit {
+    height: 3.5rem;
+    text-transform: uppercase;
+    margin: 1rem 0rem;
+  }
+  &__textarea {
+    resize: none;
+  }
+  &__inputs {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1.75rem;
+  }
+  &__header-title {
+    color: #9ba7ba;
+    line-height: 125%;
+    letter-spacing: -0.01rem;
+    margin-bottom: 1rem;
+  }
+}
+.invoice-payment-card-adress {
+  padding-top: 2.25rem;
+  border-top: 1px solid #bdc5ce;
+
+  .MuiAutocomplete-paper {
+    background-color: #fff;
+    margin-top: 0.6rem;
+    border-radius: 0.5rem;
+    // border: 1px solid #eef0f3;
+    box-shadow: 0px 12px 50px 0px rgba(0, 0, 0, 0.08);
+  }
+  .MuiAutocomplete-listbox {
+    padding: 0.5rem;
+  }
+  .MuiAutocomplete-option {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Nexa";
+    line-height: 125%;
+    border-radius: 0.375rem;
+    padding: 1rem !important;
+    &[aria-selected="true"] {
+      background-color: #f7f8f9 !important;
+      position: relative;
+      &:after {
+        content: url("../../assets//img/icons/checkmark.svg");
+        display: inline-block;
+        position: absolute;
+        top: 1rem;
+        right: 0.63rem;
+      }
+    }
+    &:hover {
+      background-color: #f7f8f9 !important;
+      .MuiAutocomplete-option[aria-selected="true"] {
+        background-color: #fff !important;
+      }
+    }
+  }
+  @media (max-width: $tablet) {
+    padding-top: 1.5rem;
+  }
+  &__inputs {
+    .invoice-payment-card__input {
+      &:first-child {
+        flex: 0 1 31.060606%;
+      }
+      &:last-child {
+        flex: 1 1 auto;
+      }
+    }
+    &--reversed {
+      flex-direction: row-reverse;
+    }
+  }
+}
+.invoice-payment-card-billing {
+  padding-bottom: 1.25rem;
+  padding-top: 2.5rem;
+  @media (max-width: $tablet) {
+    padding-top: 1.5rem;
+  }
+  &__input {
+    flex: 0 1 50%;
+  }
+  &__inputs {
+  }
+  &__title {
+  }
+}
+.invoice-payment-card-top {
+  border-bottom: 1px solid #bdc5ce;
+  background: #f7f8f9;
+  padding: 2.25rem 2.25rem 1rem 2.25rem;
+  border-radius: 0.875rem 0.875rem 0rem 0rem;
+  @media (max-width: $tablet) {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+  }
+  p {
+    line-height: 125%;
+    letter-spacing: -0.01em;
+  }
+  &__header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #bdc5ce;
+  }
+  &__resources-selected {
+    padding: 1rem 0rem;
+  }
+  &__resource-selected {
+  }
+  &__total {
+    border-top: 1px solid #bdc5ce;
+    padding-top: 1rem;
+    p {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 120%;
+    }
+  }
+}

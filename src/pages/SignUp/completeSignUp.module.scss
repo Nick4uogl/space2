@@ -1,0 +1,26 @@
+.complete-sign-up {
+  &-form-group {
+    margin-top: 1.25rem;
+  }
+
+  &__button {
+    margin-top: 1.75rem;
+  }
+
+  &-checkbox {
+    padding: 0 !important;
+    color: #121212 !important;
+  }
+  &-check-container {
+    position: relative;
+  }
+  &-check {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    label {
+      line-height: 0.9375rem;
+      font-size: 0.8125rem;
+    }
+  }
+}

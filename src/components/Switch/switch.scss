@@ -1,0 +1,40 @@
+@import '../../styles/mixins.scss';
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 26px;
+}
+.toggle-switch input[type='checkbox'] {
+  display: none;
+}
+.toggle-switch .switch {
+  position: absolute;
+  cursor: pointer;
+  background-color: #f34a4a;
+  border-radius: 1.5625rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+.toggle-switch .switch::before {
+  position: absolute;
+  content: '';
+  left: 3px;
+  top: 3px;
+  height: 20px;
+  width: 20px;
+
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+.toggle-switch input[type='checkbox']:checked + .switch::before {
+  transform: translateX(20px);
+}
+.toggle-switch input[type='checkbox']:checked + .switch {
+  background-color: #51ce7b;
+}

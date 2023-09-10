@@ -1,0 +1,11 @@
+.sign-in {
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: #6f7f8f;
+      font-size: 0.8125rem;
+      line-height: 0.9375rem;
+    }
+  }
+}

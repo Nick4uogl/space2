@@ -1,0 +1,26 @@
+.manage-subscription {
+  padding: 4rem 0;
+  @media (max-width: 1400px) {
+    padding: 2.5rem 0;
+  }
+  &__container {
+    max-width: 55rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  &__content {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 5.5rem;
+  }
+
+  &__left {
+    flex: 0 1 41.666667%;
+  }
+
+  &__right {
+    flex: 0 1 58.333333%;
+  }
+}

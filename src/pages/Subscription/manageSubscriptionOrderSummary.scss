@@ -1,0 +1,11 @@
+.order-summary {
+  &__badge {
+    border-radius: 0.4375rem;
+    background: rgba(243, 74, 74, 0.15);
+    color: var(--main-red);
+    font-size: 0.875rem;
+    line-height: 142%;
+    letter-spacing: -0.00875rem;
+    padding: 0.37rem 0.5rem;
+  }
+}

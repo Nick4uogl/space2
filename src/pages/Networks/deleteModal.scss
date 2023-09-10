@@ -1,0 +1,58 @@
+.delete-popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    border-radius: 0.9375rem;
+    max-width: 27.1875rem;
+    max-height: 23.75rem;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.03);
+    padding: 1.25rem 1.25rem 3rem 1.25rem;
+    text-align: center;
+  }
+
+  &__icon-deleted {
+    background-color: #f7f8f9;
+    padding: 1.25rem;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      transform: translateX(3px);
+    }
+    margin-bottom: 1.25rem;
+  }
+
+  &__top {
+    text-align: right;
+    margin-bottom: 2.1rem;
+  }
+
+  &__title {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+    margin-bottom: 0.7rem;
+  }
+
+  &__subtitle {
+    color: #6f7f8f;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    margin-bottom: 3rem;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: auto;
+    width: 6.1875rem;
+    height: 2.3125rem;
+  }
+}

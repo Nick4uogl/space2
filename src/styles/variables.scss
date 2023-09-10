@@ -1,0 +1,28 @@
+//minimal width
+$minWidth: 767.98;
+//the figma canvas width
+$maxWidth: 1920;
+// the width of container
+$maxWidthContainer: $maxWidth;
+
+$containerPadding: 30;
+
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// breakpoints
+$tablet: 991.98; // tablets
+$mobile: 767.98; // phones
+$mobileSmall: 479.98; // phones S
+
+:root {
+  --main-black: #121212;
+  --font-size: 1rem;
+  --main-white: #fff;
+  --main-grey: #6f7f8f;
+  --main-green: #51ce7b;
+  --main-red: #f34a4a;
+  --main-orange: #ff6948;
+  --blue: #4285f4;
+  --main-silver: #bdc5ce;
+  --main-light-grey: #eef0f3;
+}

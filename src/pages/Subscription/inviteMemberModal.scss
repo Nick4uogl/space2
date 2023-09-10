@@ -1,0 +1,42 @@
+.invite-member-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    border-radius: 0.9375rem;
+    border: 1px solid #eef0f3;
+    background: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03);
+    width: 100%;
+    max-width: 37.5rem;
+  }
+
+  &__header {
+    padding: 1.75rem 2.25rem;
+    border-bottom: 1px solid #eef0f3;
+  }
+
+  &__main {
+    padding: 2.25rem 2.25rem 1.75rem 2.25rem;
+  }
+
+  &__seats {
+    margin-top: 0.87rem;
+  }
+
+  &__form {
+    margin-bottom: 1.33rem;
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  &__input {
+    flex: 1 1 auto;
+    border-radius: 0.3125rem;
+    border: 1px solid var(--main-black);
+    padding: 0.8rem 1.25rem 0.8rem 1.25rem;
+    font-size: 0.825rem;
+    height: 3rem;
+  }
+}

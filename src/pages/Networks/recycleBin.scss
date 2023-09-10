@@ -1,0 +1,110 @@
+.recycle-bin {
+  &-back {
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.45rem;
+    transition: all 0.2s ease;
+    margin-right: 1.7rem;
+    &:hover {
+      background-color: rgba(189, 197, 206, 0.3);
+    }
+    @media (max-width: 81.25rem) {
+      margin-right: 0.2rem;
+    }
+  }
+
+  &__empty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1.875rem;
+    color: #f34a4a;
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    &__selected {
+      color: #6f7f8f;
+      line-height: 125%;
+      letter-spacing: -0.01em;
+      min-width: 5.3rem;
+      span {
+        font-weight: 700;
+        color: #121212;
+        line-height: 1.25rem;
+        letter-spacing: -0.01rem;
+      }
+    }
+
+    &__underlined-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 0.125rem;
+      align-items: flex-start;
+    }
+
+    &__underlined-btn {
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 142%;
+      text-decoration-line: underline;
+    }
+
+    &__outlined-btn {
+      border-radius: 0.5rem;
+      background: #f34a4a;
+      padding: 0.625rem 2rem;
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 1.25rem;
+      color: #f7f8f9;
+      &--green {
+        background: var(--main-green);
+      }
+    }
+  }
+
+  &__top-middle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (max-width: 1700px) {
+      top: 150px;
+      display: none;
+    }
+  }
+}
+
+.recycle-bin-network {
+  &__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1.56rem 3rem 0rem 1.56rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__checkbox {
+    pointer-events: none;
+    z-index: 1;
+    .checkmark {
+      border-color: var(--main-green);
+      &::after {
+        border-color: var(--main-green);
+      }
+    }
+  }
+
+  &__days-left {
+    background-color: #ff6948;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+    padding: 0.5rem 0.8rem;
+  }
+}

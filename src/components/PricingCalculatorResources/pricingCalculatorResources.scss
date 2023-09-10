@@ -1,0 +1,23 @@
+.resources-calculator {
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+  }
+
+  &__btn {
+    display: flex;
+    gap: 0.5625rem;
+    color: #51ce7b;
+    font-size: 0.875rem;
+    letter-spacing: -0.14px;
+    align-items: center;
+  }
+  &__header {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+  }
+}
