@@ -13,7 +13,7 @@ import NotFound from './pages/NotFound/NotFound';
 const RecycleBin = lazy(() => import('./pages/Networks/RecycleBin'));
 const ChoosePayment = lazy(() => import('./pages/Payment/ChoosePayment'));
 // const Invoice = lazy(() => import('./pages/Payment/Invoice'));
-const InvoiceForm = lazy(() => import('./pages/Payment/InvoiceForm'));
+// const InvoiceForm = lazy(() => import('./pages/Payment/InvoiceForm'));
 const PricingCalculator = lazy(() =>
   import('./pages/PricingCalculator/PricingCalculator'),
 );
@@ -173,14 +173,14 @@ const AppRouter = () => {
               </Suspense>
             }
           />
-          <Route
+          {/* <Route
             path="/invoice-payment"
             element={
               <Suspense fallback={<Loading />}>
                 <InvoiceForm />
               </Suspense>
             }
-          />
+          /> */}
           {/* <Route
             path="/invoice"
             element={
