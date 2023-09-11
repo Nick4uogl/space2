@@ -38,7 +38,6 @@ function Header() {
         <Link to={'/'}>
           <img src={logo} alt="" />
         </Link>
-        {import.meta.env.VITE_FRONTEND_URL}
         <div className={'header__right'}>
           <Link to={'/resources'} className="header__link txt-w-14">
             New Search
